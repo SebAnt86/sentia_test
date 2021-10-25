@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   resources :stories do 
-    colloection { post :import}
+    collection { post :import}
   end
 
   root "stories#index"
