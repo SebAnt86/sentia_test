@@ -10,4 +10,16 @@
     <th>Weapon</th>
     <th>Vehicle</th>
   </tr>
+
+  <% @stories.each do |story| %>
+    <tr>
+        <td><%= story.name %></td>
+        <td><%= story.location %></td>
+        <td><%= story.species %></td>
+        <td><%= story.gender %></td>
+        <td><%= story.affiliations %></td>
+        <td><%= story.weapon %></td>
+        <td><%= story.vehicle %></td>
+    </tr>
+  <% end %>
 </table>
